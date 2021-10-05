@@ -2,38 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Project tracking intro component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  Product
-  Features
-  Pricing
-  Login
-
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <div class="content"></div>
+  <div class="nav">
+    <div class="nav__logo">
+      <img src="images/logo.svg" alt="logo" class="logo">
+    </div>
+    <div class="nav__options">
+      <div class="nav__options-pro">
+        <a href="#">Product</a>
+        <a href="#">Features</a>
+        <a href="#">Precing</a>
+        <a href="#">.</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="hero__info">
+      <div class="hero__info-new">
+        <p><span>new</span> Monograph Dashboard</p>
+      </div>
+      <div class="hero__info-title">
+        <h1>Powerful insights into your team</h1>
+      </div>
+      <div class="hero__info-text">
+        <p>Project planning and time tracking for agile teams</p>
+      </div>
+      <div class="hero__info-preview">
+        <a href="#" class="cta">Schedule a demo</a>
+        <p>to see a live preview</p>
+      </div>
+    </div>
+    <div class="hero__figure">
+      <span></span>
+      <img src="images/illustration-devices.svg" alt="" class="figure">
+    </div>
+  </div>
 </body>
 </html>

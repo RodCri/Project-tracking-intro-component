@@ -1,0 +1,130 @@
+:root{
+    --red: hsl(0, 100%, 68%);
+    --very-dark-blue: hsl(230, 29%, 20%);
+    --dark-grayish-blue: hsl(230, 11%, 40%);
+    --grayish-blue: hsl(231, 7%, 65%);
+    --light-grayish-blue: hsl(207, 33%, 95%);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    /* font-family: 'Barlow Condensed', sans-serif; */
+}
+a{
+    text-decoration: none;
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 1em;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7em;
+}
+.nav__logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav__options{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav__options-pro{
+    margin: 0 3em;
+    display: flex;
+    align-items: flex-end;
+}
+.nav__options :nth-child(4), :nth-child(5){
+    color: var(--grayish-blue);
+}
+.nav__options :nth-child(4){
+    font-size: 2em;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 3em 0 0 7em;
+    align-items: center;
+}
+.hero__info{
+    width: 50%;
+}
+.hero__figure{
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+body::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    background-color: var(--light-grayish-blue);
+    left: 50%;
+    bottom: 40%;
+    z-index: -1;
+    border-bottom-left-radius: 2em;
+}
+.hero__info-new{
+    margin: 1em 0;
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    letter-spacing: .1em;
+}
+.hero__info-new span{
+    background-color: #252a3d;
+    border-radius: 2em;
+    padding: .1em .5em .2em;
+    color: var(--light-grayish-blue);
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-right: 1em;
+}
+.hero__info-title{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+    color: #1e243e;
+}
+.hero__info-text{
+    margin: 1em 0;
+    color: var(--grayish-blue);
+    width: 50%;
+}
+.hero__info-preview{
+    display: flex;
+    margin: 2em 0;
+    align-items: center;
+}
+.hero__info-preview p{
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-left: 1em;
+    font-size: .8em;
+}
+.cta{
+    background-color: var(--red);
+    padding: .5em 2em;
+    border-radius: .3em;
+    color: var(--light-grayish-blue);
+    margin: 0;
+}
